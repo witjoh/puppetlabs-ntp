@@ -20,5 +20,7 @@ end
 
 RSpec.configure do |c|
   c.default_facts = default_facts
+  c.formatter = 'documentation'
+  c.add_formatter('RSpec::RspecSonarFormatter::Formatter', 'junit/reports_sonar.xml')
 end
 require 'spec_helper_local'

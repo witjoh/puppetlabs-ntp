@@ -33,6 +33,7 @@ group :development do
   gem "puppet-module-win-default-r#{minor_version}",   require: false, platforms: [:mswin, :mingw, :x64_mingw]
   gem "puppet-module-win-dev-r#{minor_version}",       require: false, platforms: [:mswin, :mingw, :x64_mingw]
   gem "puppet-blacksmith", '~> 3.4',                   require: false
+  gem "rspec_sonar_formatter", :git => "https://github.com/witjoh/rspec_sonar_formatter.git", :branch => "master"
 end
 group :system_tests do
   gem "puppet-module-posix-system-r#{minor_version}",                            require: false, platforms: [:ruby]
